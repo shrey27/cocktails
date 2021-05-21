@@ -18,7 +18,7 @@ export default function SearchForm() {
     <section className='section search'>
       <form className='search-form' onSubmit={handleSubmit}>
         <div className='form-control'>
-          <label htmlFor='name'>search your favorite cocktail</label>
+          <h3>Search For a cocktail</h3>
           <input
             type='text'
             name='name'

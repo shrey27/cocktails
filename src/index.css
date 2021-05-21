@@ -51,8 +51,7 @@ h4,
 h5,
 h6 {
   font-family: var(--slantedFont);
-  margin-bottom: 1.25rem;
-  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1rem;
 }
 p {
   margin-bottom: 1.25rem;
@@ -83,35 +82,25 @@ Buttons
   border: 2px solid var(--primaryColor);
   padding: 0.45rem 0.8rem;
   display: inline-block;
-  transition: var(--mainTransition);
   cursor: pointer;
   font-size: 0.8rem;
   background: transparent;
   border-radius: var(--mainBorderRadius);
   display: inline-block;
 }
-.btn:hover {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
-}
+
 .btn-white {
   background: transparent;
   color: var(--mainWhite);
   border-color: var(--mainWhite);
 }
-.btn-white:hover {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
-}
+
 .btn-primary {
   background: var(--primaryColor);
   color: var(--mainWhite);
   border-color: transparent;
 }
-.btn-primary:hover {
-  background: var(--primaryLightColor);
-  color: var(--primaryColor);
-}
+
 .btn-block {
   width: 100%;
   display: block;
@@ -122,22 +111,18 @@ Buttons
 .btn-details {
   padding: 0.25rem 0.4rem;
 }
-.btn-details:hover {
-  background: var(--primaryLightColor);
-  border-color: var(--primaryLightColor);
-}
+
 /* 
 ====== 
 Navbar
 ======
 */
 .navbar {
-  background: var(--mainWhite);
+  background: rgb(40, 160, 40);
   height: 5rem;
   display: flex;
   align-items: center;
   border-bottom: 2px solid var(--primaryColor);
-  box-shadow: var(--lightShadow);
 }
 .nav-center {
   display: flex;
@@ -166,7 +151,7 @@ Navbar
   color: var(--primaryColor);
 }
 .logo {
-  width: 12rem;
+  width: auto;
 }
 /* 
 ====== 
@@ -237,14 +222,12 @@ Cocktail
   background: var(--mainWhite);
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
-  transition: var(--mainTransition);
+  
   display: grid;
   grid-template-rows: auto 1fr;
   border-radius: var(--mainBorderRadius);
 }
-.cocktail:hover {
-  box-shadow: var(--darkShadow);
-}
+
 .cocktail img {
   height: 20rem;
   object-fit: cover;
@@ -274,19 +257,24 @@ Form
 .search {
   margin-top: 1rem;
   padding-bottom: 0;
+  
 }
 
 .search-form {
   width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--maxWidth);
-  background: var(--mainWhite);
+  background: rgb(138, 189, 80);
   padding: 2rem 2.5rem;
   text-transform: capitalize;
   border-radius: var(--mainBorderRadius);
-  box-shadow: var(--lightShadow);
+  
 }
-
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form-control label {
   display: block;
   margin-bottom: 1.25rem;
@@ -296,8 +284,7 @@ Form
 }
 .form-control input {
   width: 100%;
-  border: none;
-  border-color: transparent;
+  border-color: black;
   background: var(--mainBackground);
   border-radius: var(--mainBorderRadius);
   padding: 0.5rem;

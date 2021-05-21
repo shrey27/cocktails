@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../logo.svg'
+
 export default function Navbar() {
   return (
     <nav className='navbar'>
       <div className='nav-center'>
         <Link to='/'>
-          <img src={logo} alt='cocktail db logo' className='logo' />
+          <h1 className='logo'>Cocktail Search Engine</h1>
         </Link>
         <ul className='nav-links'>
           <li>
