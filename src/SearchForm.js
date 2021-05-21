@@ -1,10 +1,11 @@
-import React from 'react'
-import { useGlobalContext } from '../context'
-export default function SearchForm() {
-  const { setSearchTerm } = useGlobalContext()
-  const searchValue = React.useRef('')
+import {React,useRef,useEffect} from 'react';
+import { useGlobalContext } from './context';
 
-  React.useEffect(() => {
+function SearchForm() {
+  const { setSearchTerm } = useGlobalContext();
+  const searchValue = useRef('');
+
+  useEffect(() => {
     searchValue.current.focus()
   }, [])
 
@@ -31,3 +32,4 @@ export default function SearchForm() {
     </section>
   )
 }
+export default SearchForm;

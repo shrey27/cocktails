@@ -346,7 +346,7 @@ Cocktail
   height: 4em;
 }
 .loader {
-  color: var(--primaryColor);
+  color: rgb(6, 36, 82);
   text-indent: -9999em;
   margin: 88px auto;
   margin-top: 20rem;
