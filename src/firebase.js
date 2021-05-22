@@ -2,12 +2,12 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 
 firebase.initializeApp( {
-    apiKey: "AIzaSyAkEpciL9OaFwjcavCupnk8czguCnDn9O8",
-    authDomain: "todo-firebase-app-90dff.firebaseapp.com",
-    projectId: "todo-firebase-app-90dff",
-    storageBucket: "todo-firebase-app-90dff.appspot.com",
-    messagingSenderId: "191778831599",
-    appId: "1:191778831599:web:a6a57fb57652aceed32f1a"
+    apiKey: "AIzaSyBRycI3lerh15DHNslZhQN35AKL2YaG0Q8",
+    authDomain: "cocktails-aacfd.firebaseapp.com",
+    projectId: "cocktails-aacfd",
+    storageBucket: "cocktails-aacfd.appspot.com",
+    messagingSenderId: "358070702083",
+    appId: "1:358070702083:web:886e052c1a860383b0be36"
 });
 
 export const firestore = firebase.firestore();
