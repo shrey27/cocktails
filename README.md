@@ -6,5 +6,5 @@ A web app made using react JS, firebase and cocktails DB API.
 3-> Mobile Friendly
 
 #Test credentials :
-EMAIL: admin123@gmail.com
+EMAIL: admin123@demo.com
 PASSWORD: admin123
