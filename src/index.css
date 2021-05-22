@@ -74,7 +74,7 @@ img {
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
-  padding: 0.45rem 0.8rem;
+  padding: 0.3rem 0.8rem;
   display: inline-block;
   cursor: pointer;
   font-size: 0.8rem;
@@ -114,6 +114,7 @@ img {
   align-items: center;
   border-bottom: 2px solid var(--primaryColor);
 }
+
 .nav-center {
   display: flex;
   justify-content: space-between;
@@ -140,19 +141,49 @@ img {
 .nav-links a:hover {
   color: var(--primaryColor);
 }
+.Link{
+  margin-top: 0.2rem;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.5rem;
+  transition: var(--mainTransition);
+  border:none;
+  color: var(--mainBlack);
+  background: rgb(40, 160, 40);
+  text-decoration: none;
+}
+.Link:hover {
+  color: var(--primaryColor);
+}
 .logo {
   width: auto;
+  margin-top: 1rem;
 }
 /* About */
 .about-section {
   width: var(--smallWidth);
   max-width: var(--maxWidth);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .about-section p {
   line-height: 2rem;
   font-weight: 400;
   letter-spacing: 2px;
+}
+.about-section form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign{
+  margin:0.3rem;
+  font-size: 1rem;
+  height:1.5rem;
+  width:15rem;
 }
 /* Error */
 .error-page {

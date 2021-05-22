@@ -3,7 +3,7 @@ import Cocktail from './Cocktail'
 import Loading from './Loading'
 import { useGlobalContext } from './context'
 
-function CocktailList() {
+function CocktailList({auth}) {
   const { cocktails, loading } = useGlobalContext()
   if (loading) {
     return <Loading/>
@@ -20,7 +20,7 @@ function CocktailList() {
       <h2 className='section-title'>cocktails</h2>
       <div className='cocktails-center'>
         {cocktails.map((item) => {
-          return <Cocktail key={item.id} {...item} />
+          return <Cocktail key={item.id} {...item} auth={auth}/>
         })}
       </div>
     </section>

@@ -2,11 +2,13 @@ import React from 'react'
 import CocktailList from './CocktailList'
 import SearchForm from './SearchForm'
 
-export default function Home() {
-  return (
+function Home({auth}) {
+  return ( 
     <main>
-      <SearchForm />
-      <CocktailList />
+      {auth ? <SearchForm /> : ''}
+      <CocktailList auth={auth}/>
     </main>
   )
 }
+
+export default Home;

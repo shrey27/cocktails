@@ -5,11 +5,9 @@ export default function About() {
     <section className="section about-section">
       <h1 className="section-title">about us</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        repudiandae architecto qui adipisci in officiis, aperiam sequi atque
-        perferendis eos, autem maiores nisi saepe quisquam hic odio consectetur
-        nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione
-        hic aspernatur error blanditiis?
+       This web app presents a vast collection of cocktails from all over the world.
+       For your reference we have presented a few items. Click on a cocktail to know more about the ingredients and origin
+       of the cocktail. To find a cocktail of your choice or taste just sign In and start exploring. 
       </p>
     </section>
   );
