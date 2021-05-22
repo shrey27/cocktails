@@ -4,8 +4,8 @@ import firebase from './firebase';
 
 function SignIn(props){
     const {setAuth} = props;
-    const [email,setEmail] = useState('');
-    const [password,setPassword] = useState('');
+    const [email,setEmail] = useState('admin123@demo.com');
+    const [password,setPassword] = useState('jkl123###vbn#hzuv@098');
     const [error,setError] = useState(null);
    
     const handleInputEmail = (e) => {
