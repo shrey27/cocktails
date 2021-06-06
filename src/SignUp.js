@@ -16,8 +16,8 @@ const SignUp = (props) => {
 const handleSubmit = (e) => {
    e.preventDefault();
     firebase.auth().createUserWithEmailAndPassword(email, password)
-     .then((user) => {
-       props.history.push('/');
+     .then(() => {
+       props.history.push('/about');
      })
      .catch((error) => {
         setError(error);

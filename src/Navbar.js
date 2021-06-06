@@ -6,7 +6,7 @@ function Navbar(props) {
   const {auth} = props;
   const SignOutUser = () => {
     firebase.auth().signOut();
-   };
+   }; 
   return (
     <nav className='navbar'>
       <div className='nav-center'>

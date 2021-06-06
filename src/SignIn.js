@@ -17,8 +17,8 @@ function SignIn(props){
     const handleSubmit = async (e) => {
     e.preventDefault();
     await firebase.auth().signInWithEmailAndPassword(email, password)
-        .then((user) => {
-        props.history.push('/');
+        .then(() => {
+        props.history.push('/about');
         })
         .catch((error) => {
             setError(error);

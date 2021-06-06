@@ -1,10 +1,11 @@
-import React from 'react'
+import {React,useContext} from 'react'
+import { AppContext } from './context'
 import Cocktail from './Cocktail'
 import Loading from './Loading'
-import { useGlobalContext } from './context'
+
 
 function CocktailList({auth}) {
-  const { cocktails, loading } = useGlobalContext()
+  const { cocktails, loading } = useContext(AppContext) 
   if (loading) {
     return <Loading/>
   }
