@@ -8,3 +8,5 @@ A web app made using react JS, firebase and cocktails DB API.
 #Test credentials :
 EMAIL: admin123@demo.com
 PASSWORD: jkl123###vbn#hzuv@098
+
+Live Project : https://cocktails027.netlify.app
